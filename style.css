@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .gradient-text {
     background-clip: text;
     -webkit-background-clip: text;
@@ -21,7 +25,7 @@ html {
 
 .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link {
@@ -64,9 +68,38 @@ html {
 }
 
 .hero-pattern {
-    background-image: radial-gradient(circle at 25% 50%,
-            rgba(14, 165, 233, 0.1) 0%,
-            transparent 50%);
+    background-image: radial-gradient(circle at 25% 50%, rgba(14, 165, 233, 0.05) 0%, transparent 50%);
+}
+
+#backToTop {
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+}
+
+#backToTop.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+#backToTop:active {
+    transform: translateY(0) scale(0.95);
+}
+
+#loader {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    inset: 0;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 @media (max-width: 1023px) {
@@ -79,3 +112,20 @@ html {
     }
 }
 
+/* Accessibility improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+:focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+}
