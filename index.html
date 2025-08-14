@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Moheeb Shams - Frontend Web Developer specializing in modern web technologies. Creating pixel-perfect, accessible, and performant web experiences." />
-  <meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, Tailwind CSS, React, portfolio" />
+  <meta name="description"
+    content="Moheeb Shams - Frontend Web Developer specializing in modern web technologies. Creating pixel-perfect, accessible, and performant web experiences." />
+  <meta name="keywords"
+    content="frontend developer, web developer, HTML, CSS, JavaScript, Tailwind CSS, React, portfolio" />
   <meta name="author" content="Moheeb Shams" />
   <meta property="og:title" content="Moheeb Shams | Frontend Web Developer" />
-  <meta property="og:description" content="Professional Frontend Developer creating modern, responsive websites and web applications." />
+  <meta property="og:description"
+    content="Professional Frontend Developer creating modern, responsive websites and web applications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://moheebshams.github.io" />
   <meta property="og:image" content="https://moheebshams.github.io/images/preview.jpg" />
@@ -17,7 +21,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -81,37 +87,59 @@
       },
     };
   </script>
- <!-- Custom CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="bg-slate-950 text-slate-200 font-sans antialiased transition-colors duration-300">
   <!-- Loader -->
   <div id="loader">
-    <div class="w-16 h-16 border-4 border-t-4 border-primary-500 border-solid rounded-full animate-spin-slow" aria-label="Loading"></div>
+    <div class="w-16 h-16 border-4 border-t-4 border-primary-500 border-solid rounded-full animate-spin-slow"
+      aria-label="Loading"></div>
   </div>
 
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <div class="flex flex-col lg:flex-row min-h-screen">
     <!-- Sidebar -->
-    <aside class="sidebar lg:w-80 bg-slate-950 text-slate-100 p-6 lg:p-8 flex flex-col lg:fixed lg:h-screen lg:top-0 transition-transform duration-300 fixed inset-y-0 left-0 w-3/4 sm:w-1/2 z-40">
-      <button class="lg:hidden absolute top-4 right-4 text-slate-400 hover:text-primary-400 sidebar-toggle" id="sidebarToggle" aria-label="Close menu">
+    <aside
+      class="sidebar lg:w-80 bg-slate-950 text-slate-100 p-6 lg:p-8 flex flex-col lg:fixed lg:h-screen lg:top-0 transition-transform duration-300 fixed inset-y-0 left-0 w-3/4 sm:w-1/2 z-40">
+      <button class="lg:hidden absolute top-4 right-4 text-slate-400 hover:text-primary-400 sidebar-toggle"
+        id="sidebarToggle" aria-label="Close menu">
         <i class="fas fa-times text-xl"></i>
       </button>
       <div class="flex flex-col items-center lg:items-start w-full">
-        <img src="images/dp (1).png" alt="Moheeb Shams" class="mx-auto rounded-full w-28 h-28 sm:w-32 sm:h-32 object-cover mb-6 border-4 border-slate-800 hover:border-primary-500 transition-all duration-300 animation-fade-in" width="128" height="128" />
-        <h1 class="font-heading text-2xl font-bold text-center mx-auto lg:text-left">Moheeb Shams</h1>
-        <div class="gradient-text font-medium text-lg mb-8 mx-auto">Frontend Web Developer</div>
+        <img src="images/dp (1).png" alt="Moheeb Shams"
+          class="mx-auto rounded-full w-28 h-28 sm:w-32 sm:h-32 object-cover mb-6 border-4 border-slate-800 hover:border-primary-500 transition-all duration-300 animation-fade-in"
+          width="128" height="128" />
+        <h1 class="font-heading text-2xl font-bold text-center mx-auto lg:text-left">
+          Moheeb Shams
+        </h1>
+        <div class="gradient-text font-medium text-lg mb-8 mx-auto">
+          Frontend Web Developer
+        </div>
         <nav class="flex flex-col gap-3 mb-8 w-full" aria-label="Main navigation">
-          <a href="#home" class="nav-link active-nav text-sm font-medium py-2 flex items-center hover:text-primary-400"><i class="fas fa-home mr-3 w-5 text-center" aria-hidden="true"></i><span>Home</span></a>
-          <a href="#about" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i class="fas fa-user mr-3 w-5 text-center" aria-hidden="true"></i><span>About</span></a>
-          <a href="#skills" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i class="fas fa-code mr-3 w-5 text-center" aria-hidden="true"></i><span>Skills</span></a>
-          <a href="#projects" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i class="fas fa-project-diagram mr-3 w-5 text-center" aria-hidden="true"></i><span>Projects</span></a>
-          <a href="#contact" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i class="fas fa-envelope mr-3 w-5 text-center" aria-hidden="true"></i><span>Contact</span></a>
+          <a href="#home"
+            class="nav-link active-nav text-sm font-medium py-2 flex items-center hover:text-primary-400"><i
+              class="fas fa-home mr-3 w-5 text-center" aria-hidden="true"></i><span>Home</span></a>
+          <a href="#about" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i
+              class="fas fa-user mr-3 w-5 text-center" aria-hidden="true"></i><span>About</span></a>
+          <a href="#skills" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i
+              class="fas fa-code mr-3 w-5 text-center" aria-hidden="true"></i><span>Skills</span></a>
+          <a href="#projects" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i
+              class="fas fa-project-diagram mr-3 w-5 text-center" aria-hidden="true"></i><span>Projects</span></a>
+          <a href="#contact" class="nav-link text-sm font-medium py-2 flex items-center hover:text-primary-400"><i
+              class="fas fa-envelope mr-3 w-5 text-center" aria-hidden="true"></i><span>Contact</span></a>
         </nav>
         <div class="hidden lg:flex gap-4 items-center mt-auto">
-          <a href="https://www.linkedin.com/in/moheebshams/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/moheebshams" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
-          <a href="https://x.com/MoheebShams" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110" aria-label="Twitter profile"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/moheebshams/" target="_blank" rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+            aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/moheebshams" target="_blank" rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+            aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/MoheebShams" target="_blank" rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+            aria-label="Twitter profile"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
       </div>
     </aside>
@@ -120,28 +148,48 @@
     <main class="flex-1 lg:ml-80">
       <!-- Mobile Menu Button -->
       <div class="fixed top-4 right-4 z-50 flex gap-3 items-center">
-        <button class="lg:hidden text-slate-200 hover:text-primary-400 bg-slate-800/80 backdrop-blur-sm p-2 rounded-full shadow-md" id="menuToggle" aria-label="Open menu">
+        <button
+          class="lg:hidden text-slate-200 hover:text-primary-400 bg-slate-800/80 backdrop-blur-sm p-2 rounded-full shadow-md"
+          id="menuToggle" aria-label="Open menu">
           <i class="fas fa-bars text-xl"></i>
         </button>
       </div>
 
       <!-- Hero Section -->
-      <section id="home" class="min-h-screen flex items-center px-6 py-16 sm:px-8 lg:px-16 hero-pattern bg-slate-950 animation-fade-in">
+      <section id="home"
+        class="min-h-screen flex items-center px-6 py-16 sm:px-8 lg:px-16 hero-pattern bg-slate-950 animation-fade-in">
         <div class="max-w-4xl mx-auto">
-          <div class="text-sm font-medium text-primary-600 mb-4 tracking-wide animation-fade-in-up">HELLO, I'M</div>
-          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animation-fade-in-up">
+          <div class="text-sm font-medium text-primary-600 mb-4 tracking-wide animation-fade-in-up">
+            HELLO, I'M
+          </div>
+          <h1
+            class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animation-fade-in-up">
             Moheeb <span class="gradient-text">Shams</span>
           </h1>
           <h2 class="text-xl sm:text-2xl text-slate-400 mb-8 font-medium animation-fade-in-up">
-            I build <span class="text-primary-600">beautiful</span>, <span class="text-primary-600">responsive</span> websites with modern technologies
+            I build <span class="text-primary-600">beautiful</span>,
+            <span class="text-primary-600">responsive</span> websites with
+            modern technologies
           </h2>
           <p class="text-slate-400 mb-10 max-w-2xl leading-relaxed text-sm sm:text-base animation-fade-in-up">
-            Frontend Web Developer specializing in HTML, CSS, JavaScript, and Tailwind CSS. I create pixel-perfect, accessible, and performant web experiences that users love. Currently focused on building responsive interfaces and improving user experiences.
+            Frontend Web Developer specializing in HTML, CSS, JavaScript, and
+            Tailwind CSS. I create pixel-perfect, accessible, and performant
+            web experiences that users love. Currently focused on building
+            responsive interfaces and improving user experiences.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 animation-fade-in-up">
-            <a href="#projects" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center shadow-md hover:shadow-lg animation-scale-in">View My Work <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i></a>
-            <a href="#contact" class="border border-slate-700 hover:border-primary-500 text-slate-300 hover:text-primary-400 px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center animation-scale-in"><i class="fas fa-comment-dots mr-2" aria-hidden="true"></i> Contact Me</a>
-            <a href="files/cv.pdf" target="_blank" class="border border-slate-700 hover:border-primary-500 text-slate-300 hover:text-primary-400 px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center animation-scale-in"><i class="fas fa-download mr-2" aria-hidden="true"></i> Download CV</a>
+            <a href="#projects"
+              class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center shadow-md hover:shadow-lg animation-scale-in">View
+              My Work
+              <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i></a>
+            <a href="#contact"
+              class="border border-slate-700 hover:border-primary-500 text-slate-300 hover:text-primary-400 px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center animation-scale-in"><i
+                class="fas fa-comment-dots mr-2" aria-hidden="true"></i>
+              Contact Me</a>
+            <a href="files/cv.pdf" target="_blank"
+              class="border border-slate-700 hover:border-primary-500 text-slate-300 hover:text-primary-400 px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center animation-scale-in"><i
+                class="fas fa-download mr-2" aria-hidden="true"></i>
+              Download CV</a>
           </div>
         </div>
       </section>
@@ -150,17 +198,28 @@
       <section id="about" class="px-6 py-16 sm:px-8 lg:px-16 bg-slate-900">
         <div class="max-w-4xl mx-auto">
           <div class="flex items-center mb-12">
-            <h2 class="font-heading text-3xl font-bold text-white mr-4">About Me</h2>
+            <h2 class="font-heading text-3xl font-bold text-white mr-4">
+              About Me
+            </h2>
             <div class="h-px bg-gradient-to-r from-primary-400 to-transparent flex-1"></div>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 animation-fade-in-up">
             <div class="flex flex-col justify-center">
-              <h3 class="font-heading text-xl font-semibold text-white mb-4">Who I Am</h3>
+              <h3 class="font-heading text-xl font-semibold text-white mb-4">
+                Who I Am
+              </h3>
               <p class="text-slate-300 mb-4">
-                I'm a passionate Frontend Web Developer based in Taxila, Pakistan, with expertise in creating modern, responsive websites and web applications. With a strong foundation in computer science and a keen eye for design, I bridge the gap between functionality and aesthetics.
+                I'm a passionate Frontend Web Developer based in Taxila,
+                Pakistan, with expertise in creating modern, responsive
+                websites and web applications. With a strong foundation in
+                computer science and a keen eye for design, I bridge the gap
+                between functionality and aesthetics.
               </p>
               <p class="text-slate-300 mb-6">
-                My focus is on writing clean, efficient code while creating intuitive user experiences. I stay up-to-date with the latest web technologies and best practices to deliver high-quality solutions that meet both user needs and business goals.
+                My focus is on writing clean, efficient code while creating
+                intuitive user experiences. I stay up-to-date with the latest
+                web technologies and best practices to deliver high-quality
+                solutions that meet both user needs and business goals.
               </p>
               <div class="flex gap-6">
                 <div class="text-center">
@@ -176,7 +235,8 @@
             <div class="flex items-center justify-center">
               <div class="relative animation-float">
                 <div class="relative bg-slate-700 p-1 rounded-xl shadow-xl">
-                  <img src="images/dp (1).png" alt="Moheeb Shams" class="rounded-lg w-full max-w-xs" width="300" height="300" loading="lazy" />
+                  <img src="images/dp (1).png" alt="Moheeb Shams" class="rounded-lg w-full max-w-xs" width="300"
+                    height="300" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -188,13 +248,16 @@
       <section id="skills" class="px-6 py-16 sm:px-8 lg:px-16 bg-slate-950">
         <div class="max-w-4xl mx-auto">
           <div class="flex items-center mb-12">
-            <h2 class="font-heading text-3xl font-bold text-white mr-4">My Skills</h2>
+            <h2 class="font-heading text-3xl font-bold text-white mr-4">
+              My Skills
+            </h2>
             <div class="h-px bg-gradient-to-r from-primary-400 to-transparent flex-1"></div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div class="card-hover bg-slate-800 p-6 rounded-xl border border-slate-700 animation-fade-in-up">
               <h3 class="font-heading text-xl font-semibold text-white mb-6 flex items-center">
-                <i class="fas fa-laptop-code mr-3 text-primary-500" aria-hidden="true"></i><span>Frontend Development</span>
+                <i class="fas fa-laptop-code mr-3 text-primary-500" aria-hidden="true"></i><span>Frontend
+                  Development</span>
               </h3>
               <div class="space-y-5">
                 <div>
@@ -203,7 +266,8 @@
                     <span class="text-sm text-slate-400">95%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="95%"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
                 <div>
@@ -212,7 +276,8 @@
                     <span class="text-sm text-slate-400">90%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="90%"
+                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
                 <div>
@@ -221,7 +286,8 @@
                     <span class="text-sm text-slate-400">80%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="80%"
+                      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
                 <div>
@@ -230,7 +296,8 @@
                     <span class="text-sm text-slate-400">90%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="90%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="90%"
+                      aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
               </div>
@@ -246,7 +313,8 @@
                     <span class="text-sm text-slate-400">80%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="80%"
+                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
                 <div>
@@ -255,7 +323,8 @@
                     <span class="text-sm text-slate-400">70%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="70%"
+                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
                 <div>
@@ -264,7 +333,8 @@
                     <span class="text-sm text-slate-400">70%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="70%"
+                      aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
                 <div>
@@ -273,7 +343,8 @@
                     <span class="text-sm text-slate-400">90%</span>
                   </div>
                   <div class="w-full bg-slate-700 rounded-full h-2.5">
-                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="90%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                    <div class="bg-primary-500 h-2.5 rounded-full skill-bar" style="width: 0" data-width="90%"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
                   </div>
                 </div>
               </div>
@@ -286,122 +357,191 @@
       <section id="projects" class="px-6 py-16 sm:px-8 lg:px-16 bg-slate-900">
         <div class="max-w-4xl mx-auto">
           <div class="flex items-center mb-12">
-            <h2 class="font-heading text-3xl font-bold text-white mr-4">Featured Projects</h2>
+            <h2 class="font-heading text-3xl font-bold text-white mr-4">
+              Featured Projects
+            </h2>
             <div class="h-px bg-gradient-to-r from-primary-400 to-transparent flex-1"></div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <article class="group relative">
-              <div class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
+              <div
+                class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
                 <div class="flex items-start mb-4">
-                  <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
                     <i class="fas fa-store text-lg" aria-hidden="true"></i>
                   </div>
                   <div>
-                    <h3 class="font-heading text-lg font-semibold text-white mb-1">Character NFTs</h3>
+                    <h3 class="font-heading text-lg font-semibold text-white mb-1">
+                      Character NFTs
+                    </h3>
                     <div class="flex flex-wrap gap-x-3 items-center">
-                      <a href="https://moheebshams.github.io/Character-NFTs/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300" aria-label="View Character NFTs Marketplace Live Demo">Live Demo<i class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://moheebshams.github.io/Character-NFTs/" target="_blank" rel="noopener noreferrer"
+                        class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300"
+                        aria-label="View Character NFTs Marketplace Live Demo">Live Demo<i
+                          class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
                       <span class="text-slate-500 text-xs">•</span>
-                      <a href="https://github.com/moheebshams/Character-NFTs.git" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300" aria-label="View Character NFTs Marketplace Source Code">Source Code<i class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://github.com/moheebshams/Character-NFTs.git" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300"
+                        aria-label="View Character NFTs Marketplace Source Code">Source Code<i
+                          class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
                 <p class="text-slate-300 text-sm mb-4">
-              A sleek, dark-themed NFT platform showcasing customizable digital identity characters for the metaverse, featuring interactive galleries, roadmap visuals, and minting functionality with smooth animations.
+                  A sleek, dark-themed NFT platform showcasing customizable
+                  digital identity characters for the metaverse, featuring
+                  interactive galleries, roadmap visuals, and minting
+                  functionality with smooth animations.
                 </p>
                 <div class="flex flex-wrap gap-3 items-center">
                   <span class="sr-only">Technologies used:</span>
                   <div class="flex gap-3 text-xl">
-                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5" aria-hidden="true"></i>
-                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript" aria-hidden="true"></i>
-                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3" aria-hidden="true"></i>
-                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS" aria-hidden="true"></i>
-
+                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3"
+                      aria-hidden="true"></i>
+                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS"
+                      aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
             </article>
             <article class="group relative">
-              <div class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
+              <div
+                class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
                 <div class="flex items-start mb-4">
-                  <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
                     <i class="fas fa-tasks text-lg" aria-hidden="true"></i>
                   </div>
                   <div>
-                    <h3 class="font-heading text-lg font-semibold text-white mb-1">SOLVE</h3>
+                    <h3 class="font-heading text-lg font-semibold text-white mb-1">
+                      SOLVE
+                    </h3>
                     <div class="flex flex-wrap gap-x-3 items-center">
-                      <a href="https://moheebshams.github.io/SOLVE/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300" aria-label="View SOLVE Task Manager Live Demo">Live Demo<i class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://moheebshams.github.io/SOLVE/" target="_blank" rel="noopener noreferrer"
+                        class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300"
+                        aria-label="View SOLVE Task Manager Live Demo">Live Demo<i
+                          class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
                       <span class="text-slate-500 text-xs">•</span>
-                      <a href="https://github.com/moheebshams/SOLVE.git" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300" aria-label="View SOLVE Task Manager Source Code">Source Code<i class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://github.com/moheebshams/SOLVE.git" target="_blank" rel="noopener noreferrer"
+                        class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300"
+                        aria-label="View SOLVE Task Manager Source Code">Source Code<i
+                          class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
                 <p class="text-slate-300 text-sm mb-4">
-                  A modern task management tool with a futuristic UI, offering achievement tracking, team collaboration features, and data visualization all wrapped in a dark-themed, space-inspired design with purple accents.
+                  A modern task management tool with a futuristic UI, offering
+                  achievement tracking, team collaboration features, and data
+                  visualization all wrapped in a dark-themed, space-inspired
+                  design with purple accents.
                 </p>
                 <div class="flex flex-wrap gap-3 items-center">
                   <span class="sr-only">Technologies used:</span>
                   <div class="flex gap-3 text-xl">
-                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5" aria-hidden="true"></i>
-                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript" aria-hidden="true"></i>
-                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3" aria-hidden="true"></i>
-                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS" aria-hidden="true"></i>
+                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3"
+                      aria-hidden="true"></i>
+                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS"
+                      aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
             </article>
             <article class="group relative">
-              <div class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
+              <div
+                class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
                 <div class="flex items-start mb-4">
-                  <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
                     <i class="fas fa-cloud-sun text-lg" aria-hidden="true"></i>
                   </div>
                   <div>
-                    <h3 class="font-heading text-lg font-semibold text-white mb-1">Weather Forecast</h3>
+                    <h3 class="font-heading text-lg font-semibold text-white mb-1">
+                      Weather Forecast
+                    </h3>
                     <div class="flex flex-wrap gap-x-3 items-center">
-                      <a href="https://moheebshams.github.io/Weather-forecast/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300" aria-label="View Weather Forecast App Live Demo">Live Demo<i class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://moheebshams.github.io/Weather-forecast/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300"
+                        aria-label="View Weather Forecast App Live Demo">Live Demo<i
+                          class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
                       <span class="text-slate-500 text-xs">•</span>
-                      <a href="https://github.com/moheebshams/Weather-App.git" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300" aria-label="View Weather Forecast App Source Code">Source Code<i class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://github.com/moheebshams/Weather-App.git" target="_blank" rel="noopener noreferrer"
+                        class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300"
+                        aria-label="View Weather Forecast App Source Code">Source Code<i
+                          class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
                 <p class="text-slate-300 text-sm mb-4">
-                  Real-time weather forecasts with 7-day outlooks using the Weather API. Features geolocation support, responsive design, and animated weather icons based on current conditions.
+                  Real-time weather forecasts with 7-day outlooks using the
+                  Weather API. Features geolocation support, responsive
+                  design, and animated weather icons based on current
+                  conditions.
                 </p>
                 <div class="flex flex-wrap gap-3 items-center">
                   <span class="sr-only">Technologies used:</span>
                   <div class="flex gap-3 text-xl">
-                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5" aria-hidden="true"></i>
-                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript" aria-hidden="true"></i>
-                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3" aria-hidden="true"></i>
-                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS" aria-hidden="true"></i>
+                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3"
+                      aria-hidden="true"></i>
+                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS"
+                      aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
             </article>
             <article class="group relative">
-              <div class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
+              <div
+                class="card-hover h-full bg-slate-800 p-6 rounded-lg border border-slate-700 transition-all duration-300 hover:shadow-lg hover:border-primary-500">
                 <div class="flex items-start mb-4">
-                  <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
-                    <i class="fas fa-chart-line text-lg" aria-hidden="true"></i>
+                  <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-white mr-4 flex-shrink-0 shadow-sm">
+                    <i class="fas fa-play text-lg" aria-hidden="true"></i>
                   </div>
                   <div>
-                    <h3 class="font-heading text-lg font-semibold text-white mb-1">Crypto Dashboard</h3>
+                    <h3 class="font-heading text-lg font-semibold text-white mb-1">
+                      Anime Sphere
+                    </h3>
                     <div class="flex flex-wrap gap-x-3 items-center">
-                      <a href="#" class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300" aria-label="View Crypto Dashboard Live Demo">Coming Soon<i class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://moheebshams.github.io/AnimeSphere/" target="_blank"
+                        class="text-xs font-medium text-primary-400 hover:text-primary-300 flex items-center transition-colors duration-300"
+                        aria-label="View Anime Sphere Live Demo">Live Demo<i
+                          class="fas fa-external-link-alt ml-1 text-xs" aria-hidden="true"></i></a>
                       <span class="text-slate-500 text-xs">•</span>
-                      <a href="#" class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300" aria-label="View Crypto Dashboard Source Code">Private Repo<i class="fab fa-github ml-1 text-xs" aria-hidden="true"></i></a>
+                      <a href="https://github.com/moheebshams/AnimeSphere.git" target="_blank"
+                        class="text-xs font-medium text-slate-400 hover:text-slate-300 flex items-center transition-colors duration-300"
+                        aria-label="View Crypto Dashboard Source Code">Source Code<i class="fab fa-github ml-1 text-xs"
+                          aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
                 <p class="text-slate-300 text-sm mb-4">
-                  A cryptocurrency tracking dashboard with real-time price data, portfolio management, and historical charts. Built with React and CoinGecko API integration. (In development)
+                 AnimeSphere is an interactive platform for discovering anime from around the world, offering instant results with synopses and ratings. Its sleek design ensures a smooth, immersive browsing experience for every fan.
                 </p>
-                <div class="flex flex-wrap gap-3 items-center">
+                 <div class="flex flex-wrap gap-3 items-center">
                   <span class="sr-only">Technologies used:</span>
                   <div class="flex gap-3 text-xl">
-                    <i class="fab fa-react text-cyan-400 hover:scale-110 transition-transform" title="React" aria-hidden="true"></i>
-                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript" aria-hidden="true"></i>
-                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS" aria-hidden="true"></i>
+                    <i class="fab fa-html5 text-orange-500 hover:scale-110 transition-transform" title="HTML5"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-js-square text-yellow-400 hover:scale-110 transition-transform" title="JavaScript"
+                      aria-hidden="true"></i>
+                    <i class="fab fa-css3-alt text-blue-500 hover:scale-110 transition-transform" title="CSS3"
+                      aria-hidden="true"></i>
+                    <i class="fas fa-wind text-cyan-300 hover:scale-110 transition-transform" title="Tailwind CSS"
+                      aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -414,7 +554,9 @@
       <section id="contact" class="px-6 py-16 sm:px-8 lg:px-16 bg-slate-950 text-white">
         <div class="max-w-4xl mx-auto">
           <div class="flex items-center mb-12">
-            <h2 class="font-heading text-3xl font-bold text-white mr-4">Get In Touch</h2>
+            <h2 class="font-heading text-3xl font-bold text-white mr-4">
+              Get In Touch
+            </h2>
             <div class="h-px bg-gradient-to-r from-primary-400 to-transparent flex-1"></div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -427,7 +569,8 @@
                   </div>
                   <div>
                     <div class="text-sm text-slate-400">Email</div>
-                    <a href="mailto:moheebshams@gmail.com" class="font-medium hover:text-primary-400 transition-colors">moheebshams@gmail.com</a>
+                    <a href="mailto:moheebshams@gmail.com"
+                      class="font-medium hover:text-primary-400 transition-colors">moheebshams@gmail.com</a>
                   </div>
                 </div>
                 <div class="flex items-center">
@@ -436,7 +579,8 @@
                   </div>
                   <div>
                     <div class="text-sm text-slate-400">Phone</div>
-                    <a href="tel:+923146519232" class="font-medium hover:text-primary-400 transition-colors">+92 314 6519232</a>
+                    <a href="tel:+923146519232" class="font-medium hover:text-primary-400 transition-colors">+92 314
+                      6519232</a>
                   </div>
                 </div>
                 <div class="flex items-center">
@@ -452,9 +596,15 @@
               <div class="mt-8">
                 <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
                 <div class="flex gap-4">
-                  <a href="https://www.linkedin.com/in/moheebshams/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/moheebshams" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
-                  <a href="https://x.com/MoheebShams" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110" aria-label="Twitter profile"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/moheebshams/" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+                    aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/moheebshams" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+                    aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                  <a href="https://x.com/MoheebShams" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-slate-900 hover:bg-primary-500 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+                    aria-label="Twitter profile"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
               </div>
             </div>
@@ -462,18 +612,26 @@
               <form action="https://formspree.io/f/xyzpdqdd" method="POST" target="_blank" class="space-y-4">
                 <div>
                   <label for="name" class="block text-sm font-medium mb-1">Name</label>
-                  <input type="text" id="name" name="name" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" required />
+                  <input type="text" id="name" name="name"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    required />
                 </div>
                 <div>
                   <label for="email" class="block text-sm font-medium mb-1">Email</label>
-                  <input type="email" id="email" name="email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" required />
+                  <input type="email" id="email" name="email"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    required />
                 </div>
                 <div>
                   <label for="message" class="block text-sm font-medium mb-1">Message</label>
-                  <textarea id="message" name="message" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" required></textarea>
+                  <textarea id="message" name="message" rows="4"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg animation-scale-in">
-                  Send <i class="fas fa-paper-plane ml-2" aria-hidden="true"></i>
+                <button type="submit"
+                  class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg animation-scale-in">
+                  Send
+                  <i class="fas fa-paper-plane ml-2" aria-hidden="true"></i>
                 </button>
               </form>
             </div>
@@ -484,7 +642,10 @@
       <!-- Footer -->
       <footer class="px-6 py-6 bg-slate-950 text-slate-400 text-sm">
         <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-          <div class="mb-4 sm:mb-0">© <span id="currentYear">2023</span> Moheeb Shams. All rights reserved.</div>
+          <div class="mb-4 sm:mb-0">
+            © <span id="currentYear">2023</span> Moheeb Shams. All rights
+            reserved.
+          </div>
           <div class="flex gap-4">
             <a href="#" class="hover:text-primary-400 transition-colors duration-300">Privacy Policy</a>
             <a href="#" class="hover:text-primary-400 transition-colors duration-300">Terms of Service</a>
@@ -495,11 +656,14 @@
   </div>
 
   <!-- Back to top button -->
-  <button id="backToTop" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg transition-all duration-300 opacity-0 scale-90 flex items-center justify-center focus:outline-none" aria-label="Back to top">
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg transition-all duration-300 opacity-0 scale-90 flex items-center justify-center focus:outline-none"
+    aria-label="Back to top">
     <i class="fas fa-arrow-up text-lg" aria-hidden="true"></i>
   </button>
 
- <!-- Scripts -->
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
+
 </html>
